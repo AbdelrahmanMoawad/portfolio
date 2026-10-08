@@ -1,0 +1,9 @@
+{
+  "name": "abdelrahman-moawad-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "tsc --noEmit && vite build", "preview": "vite preview" },
+  "dependencies": { "react": "latest", "react-dom": "latest", "framer-motion": "latest", "lucide-react": "latest" },
+  "devDependencies": { "@vitejs/plugin-react": "latest", "vite": "latest", "typescript": "latest", "tailwindcss": "latest", "@tailwindcss/vite": "latest", "@types/react": "latest", "@types/react-dom": "latest" }
+}
