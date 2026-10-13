@@ -1,7 +1,6 @@
 export const about = {
   paragraphs: [
-    'Game development is my focus. I build my gameplay programming experience with Unity, C# and C++.',
-    'With around one year of game development experience, I am continuing to grow through hands-on projects and study. My long-term goal is to work at a major AAA game company.',
+    'A creative Unity (C#) Indie Game Developer who bridges the gap between complex technical problem-solving and immersive 3D visual design. Known as a versatile \'technical rescuer,\' I transform ideas into complete, engaging games by seamlessly blending robust code with artistic aesthetics, fueled by a deep passion for interactive experiences and content creation.',
   ],
   focus: 'GAME DEVELOPMENT',
   experience: 'AROUND 1 YEAR',
@@ -36,3 +35,4 @@ export const contact = {
   linkedin: 'https://www.linkedin.com/in/abdelrahman-moawad/',
   cv: '/assets/cv/Abdelrahman_Moawad_CV_Final.pdf',
 };
+
