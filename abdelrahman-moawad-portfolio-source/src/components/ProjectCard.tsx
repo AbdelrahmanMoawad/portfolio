@@ -99,7 +99,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               <DetailSection icon="mechanics" title="Key Mechanics"><ul className="project-detail-list">{project.mechanics.map((item) => <li key={item}>{item}</li>)}</ul></DetailSection>
               <DetailSection icon="challenge" title="Challenges & Learnings"><p>{project.challenges}</p></DetailSection>
               <DetailSection icon="actions" title="Action Buttons"><div className="project-modal-actions">{project.actions.map((action) => action.href
-                ? <a className="project-action-button" key={action.label} href={action.href} target="_blank" rel="noreferrer">{action.label}<span aria-hidden="true">↗</span></a>
+                ? <a className="project-action-button" key={action.label} href={action.href} target="_blank" rel="noopener noreferrer">{action.label}<span aria-hidden="true">↗</span></a>
                 : <button className="project-action-button is-unavailable" key={action.label} type="button" disabled title="Link not provided yet">{action.label}<span aria-hidden="true">↗</span></button>)}
               </div><p className="project-link-note">Project links will appear here when available.</p></DetailSection>
             </div>
