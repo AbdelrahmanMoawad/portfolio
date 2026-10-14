@@ -254,6 +254,7 @@ body.motion-ready [data-reveal].is-visible { opacity: 1; transform: translateY(0
 .project-modal-actions { display: flex; flex-wrap: wrap; gap: 9px; }
 .project-action-button { display: inline-flex; min-height: 40px; align-items: center; justify-content: space-between; gap: 22px; padding: 0 13px; border: 1px solid var(--line-bright); background: rgba(237,56,56,.07); color: var(--text); font-size: 10px; letter-spacing: .04em; text-decoration: none; }
 .project-action-button span { color: var(--accent); font-size: 14px; }
+.project-action-icon { width: 13px; height: 13px; flex: 0 0 auto; color: var(--accent); }
 .project-action-button:not(:disabled):hover { border-color: var(--accent); background: rgba(237,56,56,.14); }
 .project-action-button:disabled { opacity: .58; cursor: not-allowed; }
 [data-theme="light"] .project-modal { background: linear-gradient(145deg,#faf8f4,#e8e5df 76%); }

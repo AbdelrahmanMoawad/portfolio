@@ -99,7 +99,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               <DetailSection icon="mechanics" title="Key Mechanics"><ul className="project-detail-list">{project.mechanics.map((item) => <li key={item}>{item}</li>)}</ul></DetailSection>
               <DetailSection icon="challenge" title="Challenges & Learnings"><p>{project.challenges}</p></DetailSection>
               {project.actions.length > 0 && <DetailSection icon="actions" title="Action Buttons"><div className="project-modal-actions">{project.actions.map((action) => action.href
-                ? <a className="project-action-button" key={action.label} href={action.href} target="_blank" rel="noopener noreferrer">{action.label}<span aria-hidden="true">↗</span></a>
+                ? <a className="project-action-button" key={action.label} href={action.href} target="_blank" rel="noopener noreferrer">{action.label}{action.icon === 'play' ? <svg className="project-action-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.25 2.9a.75.75 0 0 1 1.13-.65l8.1 4.7a.75.75 0 0 1 0 1.3l-8.1 4.7a.75.75 0 0 1-1.13-.65V2.9Z" /></svg> : <span aria-hidden="true">↗</span>}</a>
                 : <button className="project-action-button is-unavailable" key={action.label} type="button" disabled title="Link not provided yet">{action.label}<span aria-hidden="true">↗</span></button>)}
               </div></DetailSection>}
             </div>

@@ -1,6 +1,7 @@
 export type ProjectAction = {
   label: string;
   href?: string;
+  icon?: 'play';
 };
 
 export type PortfolioProject = {
@@ -41,7 +42,7 @@ export const projects: PortfolioProject[] = [
     challenges: 'Refactoring the interaction system to decouple the UI was a primary challenge, successfully solved by implementing the Publisher/Subscriber pattern, which drastically improved code maintainability.',
     actions: [
       { label: 'View GitHub Repo', href: 'https://github.com/AbdelrahmanMoawad/KitchenChaos' },
-      { label: 'Play Live Demo' },
+      { label: 'Live Demo', href: 'https://abelrahmanmoawad.itch.io/kitchen-chaos', icon: 'play' },
     ],
   },
   {
