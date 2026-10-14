@@ -63,8 +63,6 @@ export const projects: PortfolioProject[] = [
       'Dynamic Audio & Lighting triggers to build psychological tension.',
     ],
     challenges: 'Managing real-time countdown physics and event synchronizations without lag was difficult, solved by using optimized timers and C# events for puzzle stages.',
-    actions: [
-      { label: 'View GitHub Repo' },
-    ],
+    actions: [],
   },
 ];

@@ -98,10 +98,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               <DetailSection icon="stack" title="Tech Stack"><ul className="project-detail-list">{project.techStack.map((item) => <li key={item}>{item}</li>)}</ul></DetailSection>
               <DetailSection icon="mechanics" title="Key Mechanics"><ul className="project-detail-list">{project.mechanics.map((item) => <li key={item}>{item}</li>)}</ul></DetailSection>
               <DetailSection icon="challenge" title="Challenges & Learnings"><p>{project.challenges}</p></DetailSection>
-              <DetailSection icon="actions" title="Action Buttons"><div className="project-modal-actions">{project.actions.map((action) => action.href
+              {project.actions.length > 0 && <DetailSection icon="actions" title="Action Buttons"><div className="project-modal-actions">{project.actions.map((action) => action.href
                 ? <a className="project-action-button" key={action.label} href={action.href} target="_blank" rel="noopener noreferrer">{action.label}<span aria-hidden="true">↗</span></a>
                 : <button className="project-action-button is-unavailable" key={action.label} type="button" disabled title="Link not provided yet">{action.label}<span aria-hidden="true">↗</span></button>)}
-              </div></DetailSection>
+              </div></DetailSection>}
             </div>
           </div>
         </div></Localized>, document.body)}
