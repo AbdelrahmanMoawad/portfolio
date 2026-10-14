@@ -60,7 +60,7 @@ The visual direction is **premium esports + game developer + championship UI**, 
 
 - Name: Abdelrahman Moawad. Role: Game Developer. Country: Egypt.
 - Focus: Unity, gameplay programming, C#, C++, and interactive game development.
-- Education: Faculty of Computers and Artificial Intelligence, Benha University; Artificial Intelligence specialization; 4th year; expected graduation 2027.
+- Education: Faculty of Computers and Artificial Intelligence, Benha University; Artificial Intelligence specialization; college start year shown as 2023; expected graduation 2027.
 - Training: Digital Egypt Pioneers Initiative (DEPI), Game Development track, in progress. It is training, not employment.
 - Experience is described as around one year. AAA studio work is a long-term career direction, not current employment.
 - **Kitchen Chaos** is a learning project built while following Code Monkey's Unity tutorial/curriculum. Do not claim original concept/design ownership.

@@ -11,7 +11,7 @@ export const education = {
   institution: 'Faculty of Computers and Artificial Intelligence',
   university: 'Benha University',
   specialization: 'Artificial Intelligence',
-  year: '4th Year',
+  year: '2023',
   graduation: '2027',
 };
 

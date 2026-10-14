@@ -13,7 +13,7 @@ export default function Education() {
           <article className="education-card">
             <div className="education-card-head"><span>01 / ACADEMIC</span><span className="education-symbol" aria-hidden="true">A</span></div>
             <h3>{education.institution}</h3><p className="education-institution">{education.university}</p>
-            <dl className="education-details"><div><dt>SPECIALIZATION</dt><dd>{education.specialization}</dd></div><div><dt>STUDY YEAR</dt><dd>{education.year}</dd></div><div><dt>EXPECTED GRADUATION</dt><dd>{education.graduation}</dd></div></dl>
+            <dl className="education-details"><div><dt>SPECIALIZATION</dt><dd>{education.specialization}</dd></div><div><dt>COLLEGE START</dt><dd>{education.year}</dd></div><div><dt>EXPECTED GRADUATION</dt><dd>{education.graduation}</dd></div></dl>
           </article>
           <article className="education-card training-card">
             <div className="education-card-head"><span>02 / TRAINING</span><span className="training-status"><i /> {training.status}</span></div>
@@ -27,3 +27,4 @@ export default function Education() {
     </section></Localized>
   );
 }
+
