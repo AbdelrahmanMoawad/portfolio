@@ -32,8 +32,8 @@ The visual direction is **premium esports + game developer + championship UI**, 
 ## Source Organization
 
 - `src/App.tsx` owns the sticky navigation, hero and player card, page composition, active-section tracking, mobile drawer, Escape-to-close behavior, and section reveal observer.
-- `src/components/` holds About, Projects/ProjectCard, Skills, Services, Education/Training, Achievement, Contact, Footer, and localization provider/components.
-- `src/data/profile.ts` stores about, education, training, achievement, and contact facts.
+- `src/components/` holds About, Projects/ProjectCard, Skills, Services, Education/Training, Contact, Footer, and localization provider/components.
+- `src/data/profile.ts` stores about, education, training, and contact facts.
 - `src/data/projects.ts` stores exactly two project records.
 - `src/data/capabilities.ts` stores the confirmed skill groups and services.
 - `src/data/translations.ts` stores the English-to-Arabic string dictionary.
@@ -65,10 +65,10 @@ The visual direction is **premium esports + game developer + championship UI**, 
 - Experience is described as around one year. AAA studio work is a long-term career direction, not current employment.
 - **Kitchen Chaos** is a learning project built while following Code Monkey's Unity tutorial/curriculum. Do not claim original concept/design ownership.
 - **The Final Minute** is a psychological horror/survival concept and must remain **IN DEVELOPMENT**. Do not claim its systems are completed.
-- The only achievement entry is registered participation in Egypt Game Jam at ITI Smart Village, 2026. Do not claim a rank, win, placement, award, or certificate.
 - Preserve only the confirmed skill and service lists in `src/data/capabilities.ts`. Do not add proficiency ratings.
 - Do not invent employers, clients, additional projects, social accounts, statistics, completed features, awards, or other unsupported facts. Do not position the portfolio as AI engineering.
 
 ## Deployment
 
 Build with `pnpm build` and publish the contents of `dist/` to a static host. The current asset URLs assume a domain-root deployment. If deploying under a URL subpath, adjust Vite's `base` and the root-absolute asset paths used for the portrait and CV. The project currently has no favicon configured.
+

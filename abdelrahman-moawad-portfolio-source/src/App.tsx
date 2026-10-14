@@ -1,7 +1,6 @@
 import About from './components/About';
 import Projects from './components/Projects';
 import Education from './components/Education';
-import Achievement from './components/Achievement';
 import Skills from './components/Skills';
 import Services from './components/Services';
 import Contact from './components/Contact';
@@ -9,7 +8,7 @@ import Footer from './components/Footer';
 import { Localized, useLanguage } from './components/Localization';
 import { useEffect, useRef, useState } from 'react';
 
-const sections = ['Home', 'About', 'Projects', 'Skills', 'Education', 'Services', 'Achievement', 'Contact'];
+const sections = ['Home', 'About', 'Projects', 'Skills', 'Education', 'Services', 'Contact'];
 
 export default function App() {
   const { language, toggle, theme, toggleTheme } = useLanguage();
@@ -103,7 +102,6 @@ export default function App() {
         <Skills />
         <Education />
         <Services />
-        <Achievement />
         <Contact />
       </main>
       <Footer />
@@ -111,6 +109,7 @@ export default function App() {
     </Localized>
   );
 }
+
 
 
 

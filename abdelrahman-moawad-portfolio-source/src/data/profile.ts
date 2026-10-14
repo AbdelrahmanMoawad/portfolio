@@ -21,13 +21,6 @@ export const training = {
   status: 'In Progress',
 };
 
-export const achievement = {
-  name: 'Egypt Game Jam',
-  location: 'ITI Smart Village',
-  year: '2026',
-  participation: 'Registered participant',
-};
-
 export const contact = {
   email: 'abdelrahmanmoawad5@gmail.com',
   phone: '+20 109 506 9793',

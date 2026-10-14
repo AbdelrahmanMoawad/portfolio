@@ -11,7 +11,6 @@ abdelrahman-moawad-portfolio/
 ├── src/
 │   ├── components/
 │   │   ├── About.tsx
-│   │   ├── Achievement.tsx
 │   │   ├── Contact.tsx
 │   │   ├── Education.tsx
 │   │   ├── Footer.tsx
@@ -40,3 +39,4 @@ abdelrahman-moawad-portfolio/
 ```
 
 The export excludes `node_modules/`, generated `dist/`, temporary QA files, and previous export archives. Recreate dependencies with `pnpm install --frozen-lockfile` and build output with `pnpm build`.
+
