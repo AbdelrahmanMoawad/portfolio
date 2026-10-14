@@ -8,9 +8,8 @@ export default function Contact() {
         <div className="contact-heading">
           <div>
             <span className="section-kicker"><i /> CONTACT / OPEN CHANNEL</span>
-            <h2 id="contact-title">LET’S TALK<span>.</span></h2>
+            <h2 id="contact-title">For game development opportunities and project inquiries, reach out through any of these channels.</h2>
           </div>
-          <p className="contact-intro">For game development opportunities and project inquiries, reach out through any of these channels.</p>
         </div>
         <div className="contact-grid">
           <a className="contact-card contact-email" href={`mailto:${contact.email}`}>
@@ -43,3 +42,4 @@ export default function Contact() {
     </section></Localized>
   );
 }
+
