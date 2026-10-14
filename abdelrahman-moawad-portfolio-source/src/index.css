@@ -256,7 +256,6 @@ body.motion-ready [data-reveal].is-visible { opacity: 1; transform: translateY(0
 .project-action-button span { color: var(--accent); font-size: 14px; }
 .project-action-button:not(:disabled):hover { border-color: var(--accent); background: rgba(237,56,56,.14); }
 .project-action-button:disabled { opacity: .58; cursor: not-allowed; }
-.project-link-note { margin-top: 10px !important; color: var(--muted) !important; font-size: 10px !important; }
 [data-theme="light"] .project-modal { background: linear-gradient(145deg,#faf8f4,#e8e5df 76%); }
 [data-theme="light"] .project-detail-section { background: rgba(0,0,0,.025); }
 [data-theme="light"] .project-detail-section p,[data-theme="light"] .project-detail-list li { color: #44464c; }
