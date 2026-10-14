@@ -62,10 +62,9 @@ See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for the complete source tree an
 
 - Profile image: `public/assets/profile/profile.png`
 - CV: `public/assets/cv/Abdelrahman_Moawad_CV_Final.pdf`
-- The two project illustrations are authored as inline SVGs in `src/components/ProjectCard.tsx`.
+- Project thumbnails are stored in `public/assets/projects/`.
 - No favicon file is currently configured.
 
 ## Deployment
 
 Run `pnpm build`, then publish the contents of `dist/` to a static web host. The current Vite configuration assumes the site is served from the domain root; for a subpath deployment, configure Vite's `base` and update root-absolute asset links in `src/App.tsx` and `src/data/profile.ts` accordingly.
-

@@ -38,7 +38,7 @@ The visual direction is **premium esports + game developer + championship UI**, 
 - `src/data/capabilities.ts` stores the confirmed skill groups and services.
 - `src/data/translations.ts` stores the English-to-Arabic string dictionary.
 - `src/index.css` contains design tokens and all section, theme, responsive, RTL, focus, and motion styling.
-- `public/assets/profile/profile.png` is the supplied portrait; `public/assets/cv/Abdelrahman_Moawad_CV_Final.pdf` is the supplied CV. Project artwork is inline SVG in `src/components/ProjectCard.tsx`.
+- `public/assets/profile/profile.png` is the supplied portrait; `public/assets/cv/Abdelrahman_Moawad_CV_Final.pdf` is the supplied CV. Project thumbnails are in `public/assets/projects/`.
 
 ## Theme, Localization, and RTL
 
@@ -71,4 +71,3 @@ The visual direction is **premium esports + game developer + championship UI**, 
 ## Deployment
 
 Build with `pnpm build` and publish the contents of `dist/` to a static host. The current asset URLs assume a domain-root deployment. If deploying under a URL subpath, adjust Vite's `base` and the root-absolute asset paths used for the portrait and CV. The project currently has no favicon configured.
-

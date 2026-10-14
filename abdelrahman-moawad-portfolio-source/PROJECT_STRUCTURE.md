@@ -6,6 +6,9 @@ abdelrahman-moawad-portfolio/
 │   └── assets/
 │       ├── cv/
 │       │   └── Abdelrahman_Moawad_CV_Final.pdf
+│       ├── projects/
+│       │   ├── kitchen-chaos.webp
+│       │   └── the-final-minute.webp
 │       └── profile/
 │           └── profile.png
 ├── src/
@@ -39,4 +42,3 @@ abdelrahman-moawad-portfolio/
 ```
 
 The export excludes `node_modules/`, generated `dist/`, temporary QA files, and previous export archives. Recreate dependencies with `pnpm install --frozen-lockfile` and build output with `pnpm build`.
-

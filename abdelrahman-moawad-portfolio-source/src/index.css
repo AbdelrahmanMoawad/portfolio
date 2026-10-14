@@ -218,3 +218,61 @@ body.motion-ready [data-reveal].is-visible { opacity: 1; transform: translateY(0
 [data-theme="light"] .topbar nav { background: rgba(242,240,236,.97); }
 [data-theme="light"] .topbar.is-scrolled { border-color: rgba(40,40,40,.12); background: rgba(242,240,236,.97); box-shadow: 0 8px 22px rgba(37,31,29,.08); }
 [data-theme="light"] .player-card:hover { box-shadow: 0 25px 60px rgba(37,31,29,.17); }
+
+/* Project imagery, metadata, and accessible details modal */
+.project-artwork-image { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .55s cubic-bezier(.2,.7,.25,1), filter .35s ease; }
+.project-card:hover .project-artwork-image { transform: scale(1.035); filter: brightness(1.06); }
+.project-card-footer { align-items: center; }
+.project-category { font-size: 8px; letter-spacing: .12em; }
+.project-description { min-height: 62px; margin: 14px 0 18px; font-size: 12px; line-height: 1.7; }
+.project-meta-group { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; min-width: 0; }
+.project-meta { display: grid; gap: 6px; min-width: 0; }
+.project-meta .data-label { font-size: 7px; }
+.project-meta b { overflow-wrap: anywhere; font-size: 9px; }
+.project-cta { flex: 0 0 auto; border: 1px solid #684044; padding: 10px 12px; background: rgba(237,56,56,.06); font: inherit; font-size: 8px; letter-spacing: .1em; cursor: pointer; }
+.project-cta:hover { border-color: var(--accent); background: rgba(237,56,56,.12); color: var(--text); }
+.project-cta:focus-visible,.project-modal-close:focus-visible,.project-action-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.project-modal-backdrop { position: fixed; z-index: 1000; inset: 0; display: grid; place-items: center; padding: clamp(12px, 3vw, 36px); background: rgba(4,5,6,.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.project-modal { width: min(100%, 920px); max-height: min(90vh, 900px); overflow: auto; padding: clamp(18px, 3vw, 32px); border: 1px solid var(--line-bright); background: linear-gradient(145deg, #1b1c1f, #111214 76%); color: var(--text); box-shadow: 0 28px 90px rgba(0,0,0,.55); }
+.project-modal-top,.project-modal-title { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.project-modal-top { padding-bottom: 15px; border-bottom: 1px solid var(--line); }
+.project-modal-close { display: grid; flex: 0 0 36px; place-items: center; width: 36px; height: 36px; border: 1px solid var(--line-bright); background: transparent; color: var(--text); font: 300 24px/1 'DM Sans',sans-serif; cursor: pointer; }
+.project-modal-close:hover { border-color: var(--accent); color: var(--accent); }
+.project-modal-title { align-items: end; margin: 20px 0 24px; }
+.project-modal-title h2 { margin: 6px 0 0; color: var(--text); font: 600 clamp(32px,5vw,48px)/1 var(--display); }
+.project-modal-body { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.project-detail-section { min-width: 0; padding: 16px; border: 1px solid var(--line); background: rgba(255,255,255,.018); }
+.project-detail-section:first-child,.project-detail-section:nth-child(4),.project-detail-section:last-child { grid-column: 1 / -1; }
+.project-detail-heading { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.project-detail-icon-wrap { display: grid; flex: 0 0 28px; place-items: center; width: 28px; height: 28px; border: 1px solid #684044; color: var(--accent); }
+.project-detail-icon { display: block; width: 15px; height: 15px; }
+.project-detail-heading h3 { margin: 0; color: var(--text); font: 600 20px/1 var(--display); letter-spacing: .02em; }
+.project-detail-section p { margin: 0; color: #b4b4b7; font-size: 12px; line-height: 1.75; }
+.project-detail-list { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.project-detail-list li { position: relative; padding-left: 15px; color: #c6c5c5; font-size: 11px; line-height: 1.6; }
+.project-detail-list li::before { position: absolute; top: .58em; left: 0; width: 5px; height: 5px; background: var(--accent); content: ''; }
+.project-modal-actions { display: flex; flex-wrap: wrap; gap: 9px; }
+.project-action-button { display: inline-flex; min-height: 40px; align-items: center; justify-content: space-between; gap: 22px; padding: 0 13px; border: 1px solid var(--line-bright); background: rgba(237,56,56,.07); color: var(--text); font-size: 10px; letter-spacing: .04em; text-decoration: none; }
+.project-action-button span { color: var(--accent); font-size: 14px; }
+.project-action-button:not(:disabled):hover { border-color: var(--accent); background: rgba(237,56,56,.14); }
+.project-action-button:disabled { opacity: .58; cursor: not-allowed; }
+.project-link-note { margin-top: 10px !important; color: var(--muted) !important; font-size: 10px !important; }
+[data-theme="light"] .project-modal { background: linear-gradient(145deg,#faf8f4,#e8e5df 76%); }
+[data-theme="light"] .project-detail-section { background: rgba(0,0,0,.025); }
+[data-theme="light"] .project-detail-section p,[data-theme="light"] .project-detail-list li { color: #44464c; }
+@media (max-width: 560px) {
+  .project-card-footer { align-items: stretch; flex-direction: column; }
+  .project-meta-group { gap: 10px; }
+  .project-cta { justify-content: space-between; }
+  .project-modal-backdrop { padding: 8px; }
+  .project-modal { max-height: 94vh; padding: 16px; }
+  .project-modal-title { align-items: start; flex-direction: column; margin: 17px 0; }
+  .project-modal-body { grid-template-columns: 1fr; }
+  .project-detail-section:first-child,.project-detail-section:nth-child(4),.project-detail-section:last-child { grid-column: auto; }
+  .project-detail-section { padding: 13px; }
+  .project-detail-section p { font-size: 11px; }
+  .project-detail-list li { font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { .project-artwork-image { transition-duration: .01ms !important; } }
+html[dir="rtl"] .project-detail-list li { padding-right: 15px; padding-left: 0; }
+html[dir="rtl"] .project-detail-list li::before { right: 0; left: auto; }
